@@ -16,7 +16,7 @@ const footerIconsLink = ref([
             </div>
             <div class="footer__useful-input">
                 <input type="text" placeholder="Give an email, get the newsletter.">
-                <button><img src="/svg-footer/right-arrow-icon.svg" alt=""></button>
+                <button><img src="/svg-footer/right-arrow-icon.svg" alt="right-arrow"></button>
             </div>
         </div>
         <div class="footer__lower">
