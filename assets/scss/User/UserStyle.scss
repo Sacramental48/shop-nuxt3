@@ -1,0 +1,43 @@
+.user-account {
+
+    /* .user-account__title */
+
+    &__title {
+        color: $black-light;
+        font-size: 33px;
+    }
+
+    /* .user-account__buttons */
+
+    &__buttons {}
+
+    /* .user-account__signin */
+
+    &__signin {}
+
+    /* .user-account__register */
+
+    &__register {}
+}
+.form {
+
+    /* .form__email */
+
+    &__email {}
+
+    /* .form__password */
+
+    &__password {}
+
+    /* .form__checkbox */
+
+    &__checkbox {}
+
+    /* .form__signin */
+
+    &__signin {}
+
+    /* .form__forgot-password */
+
+    &__forgot-password {}
+}
