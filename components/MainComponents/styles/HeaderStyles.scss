@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 64px 0 16px 0;
+    margin: 64px 0 0 0;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $gray-light;
     /* .header__logo */
 
     &__logo {
