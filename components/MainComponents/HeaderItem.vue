@@ -14,13 +14,13 @@ const actionsBar = ref([
             <nav class="header__menu">
                 <ul class="header-menu__list" v-for="item in navbar" :key="item">
                     <li class="header-menu__item">
-                        <NuxtLink class="header-menu__link" to="`${item}`">{{ item }}</NuxtLink>
+                        <NuxtLink class="header-menu__link" :to="item">{{ item }}</NuxtLink>
                     </li>
                 </ul>
             </nav>
             <div class="header__actions">
-                <NuxtLink class="header-actions__link" to="`${item.routerPath}`" v-for="item in actionsBar" :key="item.path">
-                    <img class="header-actions__img" :src="`${item.path}`" :alt="`${item.alt}`">
+                <NuxtLink class="header-actions__link" :to="item.routerPath" v-for="item in actionsBar" :key="item.path">
+                    <img class="header-actions__img" :src="item.path" :alt="item.alt">
                 </NuxtLink>
             </div>
         </div>

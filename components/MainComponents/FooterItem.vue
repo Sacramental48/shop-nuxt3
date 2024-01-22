@@ -2,7 +2,7 @@
 const usefulLinks = ref(['CONTACT', 'TERMS OF SERVICES', 'SHIPPING AND RETURNS']);
 const footerIconsLink = ref([
     {path: '/svg-footer/in-icon.svg', alt: 'in'},
-    {path: '/svg-footer/facebook-icon.svg', alt: 'facebook'},
+    {path: '/svg-footer/facebook-icon.svg', alt: 'facebook', way: 'https://vk.com/al_feed.php'},
     {path: '/svg-footer/instagram-icon.svg', alt: 'instagram'},
     {path: '/svg-footer/twitterX-icon.svg', alt: 'twitterX'}
 ])
@@ -22,8 +22,8 @@ const footerIconsLink = ref([
         <div class="footer__lower">
             <p class="footer__privacy">© 2021 Shelly. <span>Terms of use</span> and <span>privacy policy.</span></p>
             <div class="footer__icons">
-                <NuxtLink class="footer__icons-link" v-for="item in footerIconsLink" :key="item.path" to="">
-                    <img :src="`${item.path}`" :alt="`${item.alt}`">
+                <NuxtLink class="footer__icons-link" v-for="item in footerIconsLink" :key="item.path" :to="item.way">
+                    <img :src="item.path" :alt="item.alt">
                 </NuxtLink>
             </div>
         </div>
