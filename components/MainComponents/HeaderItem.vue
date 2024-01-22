@@ -3,7 +3,7 @@ const navbar = ref(['Shop', 'Blog', 'Our Story']);
 const actionsBar = ref([
     {path: '/svg-header/search-icon.svg', alt: 'search'},
     {path: '/svg-header/shopping-icon.svg', alt: 'shopping', routerPath: '/shopping'},
-    {path: '/svg-header/user-icon.svg', alt: 'user', routerPath: '/user'},
+    {path: '/svg-header/user-icon.svg', alt: 'user', routerPath: '/userlogin'},
 ]);
 </script>
 
