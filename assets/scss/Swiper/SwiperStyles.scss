@@ -1,0 +1,60 @@
+.swiper {
+    width: 1248px;
+    height: 646px;
+    /* .swiper__block */
+
+    &__block {
+        position: relative;
+    }
+
+    /* .swiper__image */
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    /* .swiper__discription */
+
+    &__discription {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 226px;
+        left: 39px;
+        color: $white-light;
+    }
+
+    /* .swiper__title */
+
+    &__title {
+        font-size: 33px;
+        margin-bottom: 16px;
+    }
+
+    /* .swiper__price */
+
+    &__price {
+        font-size: 26px;
+        margin-bottom: 48px;
+    }
+
+    /* .swiper__button */
+
+    &__button {
+        width: 193px;
+        height: 53px;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 6px;
+        color: $white-light;;
+        border: 2px solid $white-light;
+        background: none;
+        cursor: pointer;
+    }
+}

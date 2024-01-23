@@ -3,7 +3,9 @@
 </script>
 
 <template>
-    
+    <div>
+        <TheSwiper />
+    </div>
 </template>
 <style scoped lang="scss">
 </style>
