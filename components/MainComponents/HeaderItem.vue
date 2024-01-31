@@ -10,7 +10,7 @@ const actionsBar = ref([
 <template>
     <header class="header">
         <NuxtLink class="header__logo" to="/">SHOPPE</NuxtLink>
-        <UIBurgerTheBurgerMenu />
+        <UIBurger />
         <div class="header__right-side">
             <nav class="header__menu">
                 <ul class="header-menu__list" v-for="item in navbar" :key="item">
@@ -28,5 +28,5 @@ const actionsBar = ref([
     </header>
 </template>
 <style scoped lang="scss">
-@import './styles/HeaderStyles.scss'
+@import './styles/HeaderItemStyles.scss'
 </style>

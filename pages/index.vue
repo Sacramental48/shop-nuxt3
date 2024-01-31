@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <TheSwiper />
+        <UISwiper />
     </div>
 </template>
 <style scoped lang="scss">

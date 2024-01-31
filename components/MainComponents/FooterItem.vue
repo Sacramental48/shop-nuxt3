@@ -30,5 +30,5 @@ const footerIconsLink = ref([
     </div>
 </template>
 <style scoped lang="scss">
-@import './styles/FooterStyles.scss'
+@import './styles/FooterItemStyles.scss';
 </style>

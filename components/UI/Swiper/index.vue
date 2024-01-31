@@ -47,5 +47,5 @@ const modules = ref([Navigation, Pagination, Scrollbar, A11y]);
     </div>
 </template>
 <style scoped>
-@import '../assets/scss/Swiper/SwiperStyles.scss';
+@import './TheSwiperStyles.scss';
 </style>

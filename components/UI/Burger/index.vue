@@ -10,5 +10,5 @@
     </div>
 </template>
 <style scoped lang="scss">
-@import './TheBurgerMenuStyles.scss';
+@import './TheBurgerStyles.scss';
 </style>
