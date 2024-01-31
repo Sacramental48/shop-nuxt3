@@ -1,6 +1,19 @@
 .swiper {
     width: 1248px;
     height: 646px;
+
+    @media (max-width: 1249px) {
+        width: 960px;
+    }
+
+    @media (max-width: 991px) {
+        width: 720px;
+    }
+
+    @media (max-width: 768px) {
+        width: 540px;
+    }
+
     /* .swiper__block */
 
     &__block {

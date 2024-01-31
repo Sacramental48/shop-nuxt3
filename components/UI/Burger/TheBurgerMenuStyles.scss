@@ -1,0 +1,35 @@
+.burger {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4.65px;
+    @media (max-width: 768px) {
+        display: flex;
+    }
+    /* .burger__upper-line */
+
+    &__upper-line {
+        content: "";
+        width: 20px;
+        height: 1.87px;
+        background: $black-light;
+    }
+
+    /* .burger__middle-line */
+
+    &__middle-line {
+        content: "";
+        width: 20px;
+        height: 1.87px;
+        background: $black-light;
+    }
+
+    /* .burger__bottom-line */
+
+    &__bottom-line {
+        content: "";
+        width: 14px;
+        height: 1.87px;
+        background: $black-light;
+    }
+}
