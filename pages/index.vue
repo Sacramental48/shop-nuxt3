@@ -4,6 +4,7 @@
 
 <template>
     <div>
+        <input type="text">
         <UISwiper />
     </div>
 </template>

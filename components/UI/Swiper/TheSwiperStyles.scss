@@ -1,22 +1,30 @@
 .swiper {
-    width: 1248px;
+    max-width: 1248px;
     height: 646px;
 
-    @media (max-width: 1249px) {
+    @media (max-width: 1248px) {
         width: 960px;
+        height: 496px;
     }
 
     @media (max-width: 991px) {
         width: 720px;
+        height: 372px;
     }
 
     @media (max-width: 768px) {
         width: 540px;
+        height: 279px;
     }
 
+    @media (max-width: 546px){
+        width: 288px;
+        height: 299px;
+    }
     /* .swiper__block */
 
     &__block {
+        height: 100%;
         position: relative;
     }
 
@@ -26,10 +34,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        height: 100%;
         border-radius: 16px;
         object-fit: cover;
+        @media (max-width: 546px) {
+            object-fit: cover;
+            object-position: 94%;
+        }
     }
 
     /* .swiper__discription */
@@ -38,9 +50,14 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 226px;
+        top: 50%;
         left: 39px;
+        transform: translate(0, -50%);
         color: $white-light;
+        @media (max-width: 546px) {
+            transform: translate(0, 30%);
+            left: 20px;
+        }
     }
 
     /* .swiper__title */
@@ -48,6 +65,14 @@
     &__title {
         font-size: 33px;
         margin-bottom: 16px;
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 546px) {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
     }
 
     /* .swiper__price */
@@ -55,6 +80,14 @@
     &__price {
         font-size: 26px;
         margin-bottom: 48px;
+        @media (max-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 546px) {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
     }
 
     /* .swiper__button */
@@ -69,5 +102,17 @@
         border: 2px solid $white-light;
         background: none;
         cursor: pointer;
+        @media (max-width: 768px) {
+            width: 140px;
+            height: 36px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 546px) {
+            width: 96px;
+            height: 32px;
+            font-size: 12px;
+        }
+
     }
 }
