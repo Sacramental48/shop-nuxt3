@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const navbar = ref(['Shop', 'Blog', 'Our Story']);
 const actionsBar = ref([
-    {path: '/svg-header/search-icon.svg', alt: 'search'},
     {path: '/svg-header/shopping-icon.svg', alt: 'shopping', routerPath: '/shopping'},
     {path: '/svg-header/user-icon.svg', alt: 'user', routerPath: '/userlogin'},
 ]);
@@ -20,6 +19,9 @@ const actionsBar = ref([
                 </ul>
             </nav>
             <div class="header__actions">
+                <button class="header-actions__button">
+                    <img src="/svg-header/search-icon.svg" alt="search">
+                </button>
                 <NuxtLink class="header-actions__link" :to="item.routerPath" v-for="item in actionsBar" :key="item.path">
                     <img class="header-actions__img" :src="item.path" :alt="item.alt">
                 </NuxtLink>

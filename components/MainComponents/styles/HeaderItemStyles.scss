@@ -78,4 +78,10 @@
     /* .header-actioons__img */
 
     &__img {}
+
+    &__button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
 }
