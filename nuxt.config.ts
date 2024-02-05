@@ -14,4 +14,16 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-lazy-load'
   ],
+  lazyLoad: {
+    // These are the default values
+    images: false,
+    videos: true,
+    audios: true,
+    iframes: true,
+    native: false,
+    directiveOnly: true,
+    
+    // Default image must be in the public folder
+    defaultImage: '/default-image.png',
+  }
 })
