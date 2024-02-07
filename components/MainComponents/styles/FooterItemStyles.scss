@@ -36,8 +36,8 @@
     /* .footer__useful-input */
     &__useful-input {
         display: flex;
-        align-items: center;
         border-bottom: 1px solid $black-light;
+        height: 63px;
         input {
             width: 396px;
             border: none;
@@ -55,7 +55,7 @@
             outline: none;
             background-color: #fff;
             cursor: pointer;
-            height: 63px;
+            height: 100%;
         }
     }
 
@@ -90,6 +90,12 @@
         cursor: pointer;
     }
 
+    @media (max-width: 1248px) {
+        &__useful-input {
+            width: 310px;
+        }
+    }
+
     @media (max-width: 991px) {
         &__useful {
             flex-direction: column-reverse;
@@ -121,6 +127,18 @@
         &__useful-block {
             font-size: 12px;
             gap: 8px
+        }
+
+        &__useful-input {
+            width: 288px;
+            height: 44px;
+            input {
+                font-size: 16px;
+                padding: 7px 0 6px 0;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
         }
 
         &__privacy {

@@ -14,10 +14,10 @@ const footerIconsLink = ref([
             <div class="footer__useful-block">
                 <NuxtLink class="footer__useful-item" v-for="item in usefulLinks" :to="item">{{ item }}</NuxtLink>
             </div>
-            <!-- <div class="footer__useful-input">
+            <div class="footer__useful-input">
                 <input type="text" placeholder="Give an email, get the newsletter.">
                 <button><img src="/svg-footer/right-arrow-icon.svg" alt="right-arrow"></button>
-            </div> -->
+            </div>
         </div>
         <div class="footer__lower">
             <p class="footer__privacy">© 2021 Shelly. <span>Terms of use</span> and <span>privacy policy.</span></p>
