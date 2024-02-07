@@ -4,7 +4,6 @@
     align-items: center;
     padding: 17px 0;
     border-bottom: 1px solid $gray-light;
-    /* .header__logo */
 
     &__logo {
         font-family: "Allerta Stencil", sans-serifs;
@@ -14,8 +13,6 @@
             color: $accent-light;
         }
     }
-
-    /* .header__menu */
 
     &__menu {
         display: flex;
@@ -27,58 +24,44 @@
             border-left: 1px solid $dark_gray-light;
             height: 20px;
         }
-
-        @media (max-width: 991px) {
-            gap: 30px;
-            margin-right: 14px;
-        }
     }
-
-    /* .header__actions */
-
+    
     &__actions {
         display: flex;
         gap: 39px;
         margin-left: 48px;
-
-        @media (max-width: 991px) {
-            gap: 28px;
-            margin-left: 14px;
-        }
     }
 
     &__right-side {
         display: flex;
-        @media (max-width: 768px) {
+    }
+
+    @media (max-width: 991px) {
+        &__menu {
+            gap: 30px;
+            margin-right: 14px;
+        }
+
+        &__actions {
+            gap: 28px;
+            margin-left: 14px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        &__right-side {
             display: none;
         }
     }
 }
 .header-menu {
-    /* .header-menu__list */
-
-    &__list {}
-
-    /* .header-menu__item */
-
-    &__item {}
-
-    /* .header-menu__link */
-
     &__link {
         font-size: 16px;
         color: $black-light;
     }
 }
 .header-actions {
-    /* .header-actioons__link */
-
-    &__link {}
-
-    /* .header-actioons__img */
-
-    &__img {}
-
     &__button {
         border: none;
         background: none;
