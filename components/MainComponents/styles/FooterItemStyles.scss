@@ -1,7 +1,8 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 40px 0 90px 0;
+    margin: 40px 0 0 0;
+    padding: 0px 0px 90px 0px;
     border-top: 1px solid $gray-light;
     @media (max-width: 320px) {
         border: none;
@@ -41,7 +42,9 @@
 
     /* .footer__useful-item */
 
-    &__useful-item {}
+    &__useful-item {
+        color: $dark-gray-light;
+    }
 
     /* .footer__useful-input */
     &__useful-input {

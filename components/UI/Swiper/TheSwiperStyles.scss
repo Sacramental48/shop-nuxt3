@@ -1,6 +1,7 @@
 .swiper {
     max-width: 1248px;
     height: 646px;
+    margin-bottom: 64px;
 
     @media (max-width: 1248px) {
         width: 960px;
@@ -20,28 +21,19 @@
     @media (max-width: 546px){
         width: 288px;
         height: 299px;
+        margin-bottom: 21px;
     }
-    /* .swiper__block */
 
     &__block {
         height: 100%;
         position: relative;
     }
 
-    /* .swiper__image */
-
     &__image {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
         width: 100%;
         height: 100%;
         border-radius: 16px;
         object-fit: cover;
-        @media (max-width: 546px) {
-            object-fit: cover;
-            object-position: 94%;
-        }
     }
 
     /* .swiper__discription */
@@ -54,10 +46,6 @@
         left: 39px;
         transform: translate(0, -50%);
         color: $white-light;
-        @media (max-width: 546px) {
-            transform: translate(0, 30%);
-            left: 20px;
-        }
     }
 
     /* .swiper__title */
@@ -65,14 +53,6 @@
     &__title {
         font-size: 33px;
         margin-bottom: 16px;
-        @media (max-width: 768px) {
-            font-size: 28px;
-        }
-
-        @media (max-width: 546px) {
-            font-size: 20px;
-            margin-bottom: 3px;
-        }
     }
 
     /* .swiper__price */
@@ -80,14 +60,6 @@
     &__price {
         font-size: 26px;
         margin-bottom: 48px;
-        @media (max-width: 768px) {
-            font-size: 20px;
-            margin-bottom: 24px;
-        }
-        @media (max-width: 546px) {
-            font-size: 12px;
-            margin-bottom: 12px;
-        }
     }
 
     /* .swiper__button */
@@ -102,17 +74,50 @@
         border: 2px solid $white-light;
         background: none;
         cursor: pointer;
-        @media (max-width: 768px) {
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__price {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        &__button {
             width: 140px;
             height: 36px;
             font-size: 16px;
         }
+    }
 
-        @media (max-width: 546px) {
+    @media (max-width: 546px) {
+        &__image {
+            object-fit: cover;
+            object-position: 94%;
+        }
+
+        &__discription {
+            transform: translate(0, 30%);
+            left: 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+
+        &__price {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+
+        &__button {
             width: 96px;
             height: 32px;
             font-size: 12px;
         }
-
     }
 }

@@ -35,7 +35,7 @@ const modules = ref([Navigation, Pagination, Scrollbar, A11y]);
         >
             <swiper-slide v-for="item in result" :key="item.id">
                 <div class="swiper__block">
-                    <img class="swiper__image" data-src="/img-main-content/main-img.png" alt="img" v-lazy-load />
+                    <NuxtImg  class="swiper__image" src="/img-main-content/main-img.jpg" alt="img" />
                     <div class="swiper__discription">
                         <span class="swiper__title">Gold big hoops </span>
                         <span class="swiper__price">$ 68,00</span>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const usefulLinks = ref(['CONTACT', 'TERMS OF SERVICES', 'SHIPPING AND RETURNS']);
 const footerIconsLink = ref([
-    {path: '/svg-footer/in-icon.svg', alt: 'in'},
+    {path: '/svg-footer/in-icon.svg', alt: 'in', way: 'https://vk.com/al_feed.php'},
     {path: '/svg-footer/facebook-icon.svg', alt: 'facebook', way: 'https://vk.com/al_feed.php'},
-    {path: '/svg-footer/instagram-icon.svg', alt: 'instagram'},
-    {path: '/svg-footer/twitterX-icon.svg', alt: 'twitterX'}
+    {path: '/svg-footer/instagram-icon.svg', alt: 'instagram', way: 'https://vk.com/al_feed.php'},
+    {path: '/svg-footer/twitterX-icon.svg', alt: 'twitterX', way: 'https://vk.com/al_feed.php'}
 ])
 </script>
 
@@ -12,7 +12,7 @@ const footerIconsLink = ref([
     <div class="footer">
         <div class="footer__useful">
             <div class="footer__useful-block">
-                <NuxtLink class="footer__useful-item" v-for="item in usefulLinks" to="">{{ item }}</NuxtLink>
+                <NuxtLink class="footer__useful-item" v-for="item in usefulLinks" :to="item">{{ item }}</NuxtLink>
             </div>
             <!-- <div class="footer__useful-input">
                 <input type="text" placeholder="Give an email, get the newsletter.">
