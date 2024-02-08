@@ -6,12 +6,12 @@ interface Product {
 }
 
 const storeProducts: Product[] = [
-    {name: 'Lira Earrings', price: '$ 20,00', pathToImage: '/images/shop-images/img_1.jpg'},
-    {name: 'Hal Earrings', price: '$ 25,00', pathToImage: '/images/shop-images/img_2.jpg'},
-    {name: 'Kaede Hair Pin Set Of 3 ', price: '$ 30,00', pathToImage: '/images/shop-images/img_3.jpg'},
-    {name: 'Hair Pin Set of 3', price: '$ 30,00', pathToImage: '/images/shop-images/img_4.jpg'},
-    {name: 'Plaine Necklace', price: '$ 19,00', pathToImage: '/images/shop-images/img_5.jpg'},
-    {name: 'Yuki Hair Pin Set of 3', price: '$ 29,00', pathToImage: '/images/shop-images/img_6.jpg'},
+    {name: 'Lira Earrings', price: '$ 20,00', pathToImage: '/shop-images/img_1.jpg'},
+    {name: 'Hal Earrings', price: '$ 25,00', pathToImage: '/shop-images/img_2.jpg'},
+    {name: 'Kaede Hair Pin Set Of 3 ', price: '$ 30,00', pathToImage: '/shop-images/img_3.jpg'},
+    {name: 'Hair Pin Set of 3', price: '$ 30,00', pathToImage: '/shop-images/img_4.jpg'},
+    {name: 'Plaine Necklace', price: '$ 19,00', pathToImage: '/shop-images/img_5.jpg'},
+    {name: 'Yuki Hair Pin Set of 3', price: '$ 29,00', pathToImage: '/shop-images/img_6.jpg'},
 ];
 
 </script>
