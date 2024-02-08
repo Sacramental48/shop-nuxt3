@@ -2,22 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 39px;
-    }
-
-    &__title {
-        font-size: 33px;
-        color: $black-light;
-    }
-
-    &__link {
-        font-size: 20px;
-        color: $accent-light;
-    }
-
     &__wrapper {
         display: flex;
         justify-content: center;

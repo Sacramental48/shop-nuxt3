@@ -18,10 +18,6 @@ const storeProducts: Product[] = [
 
 <template>
     <div class="shop">
-        <div class="shop__header">
-            <h2 class="shop__title">Shop The Latest</h2>
-            <NuxtLink class="shop__link" to="/shop">View all</NuxtLink>
-        </div>
         <div class="shop__wrapper">
             <article class="shop__item" v-for="item in storeProducts" :key="item.name">
                 <img class="shop__image" :src="item.pathToImage" :alt="item.name" />
