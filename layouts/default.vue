@@ -39,6 +39,11 @@
         justify-content: center;
         width: 100%;
         height: 100%;
+        margin-bottom: 250px;
+
+        @media (max-width: 546px){
+            margin-bottom: 72px;
+        }
     }
 }
 </style>

@@ -17,16 +17,16 @@ const storeProducts: Product[] = [
 </script>
 
 <template>
-    <div class="card">
-        <div class="card__header">
-            <h2 class="card__title">Shop The Latest</h2>
-            <NuxtLink class="card__link" to="/shop">View all</NuxtLink>
+    <div class="shop">
+        <div class="shop__header">
+            <h2 class="shop__title">Shop The Latest</h2>
+            <NuxtLink class="shop__link" to="/shop">View all</NuxtLink>
         </div>
-        <div class="card__wrapper">
-            <article class="card__item" v-for="item in storeProducts" :key="item.name">
-                <img class="card__image" :src="item.pathToImage" :alt="item.name" />
-                <p class="card__name">{{ item.name }}</p>
-                <span class="card__price">{{ item.price }}</span>
+        <div class="shop__wrapper">
+            <article class="shop__item" v-for="item in storeProducts" :key="item.name">
+                <img class="shop__image" :src="item.pathToImage" :alt="item.name" />
+                <p class="shop__name">{{ item.name }}</p>
+                <span class="shop__price">{{ item.price }}</span>
             </article>
         </div>
     </div>

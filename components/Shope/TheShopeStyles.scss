@@ -1,11 +1,6 @@
-.card {
+.shop {
     display: flex;
     flex-direction: column;
-    margin-bottom: 250px;
-
-    @media (max-width: 546px){
-        margin-bottom: 72px;
-    }
 
     &__header {
         display: flex;
@@ -33,6 +28,11 @@
     &__item {
         width: 380px;
         height: auto;
+        cursor: pointer;
+        border-radius: 4px;
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
     }
 
     &__image {
@@ -57,7 +57,8 @@
     @media (max-width: 1248px) {
         &__wrapper {
             justify-content: space-between;
-            gap: 15px;
+            gap: 6px;
+            
         }
         
         &__item {
@@ -97,6 +98,7 @@
     @media (max-width: 546px) {
         &__item {
             width: 136px;
+            margin-bottom: 18px;
         }
         &__image {
             height: 136px;

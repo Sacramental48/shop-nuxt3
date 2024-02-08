@@ -1,11 +1,11 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 40px 0 0 0;
     padding: 0px 0px 90px 0px;
     border-top: 1px solid $gray-light;
-    @media (max-width: 320px) {
-        border: none;
+    @media (max-width: 546px) {
+        border-top: none;
+        padding: 0 0 20px 0;
     }
     /* .footer__useful */
 
@@ -113,6 +113,10 @@
     }
 
     @media (max-width: 768px) {
+        &__useful {
+            margin: 0 0 48px 0;
+        }
+
         &__lower {
             flex-direction: column-reverse;
             align-items: flex-start;
