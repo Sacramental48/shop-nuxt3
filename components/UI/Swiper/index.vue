@@ -1,39 +1,12 @@
 <script setup>
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import axios from 'axios'
+import 'vue3-carousel/dist/carousel.css'
 
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-
-const result = ref('');
-
-const getRequest = async () => {
-    try {
-        const response = await axios.get('https://75b6151bc3226b27.mokky.dev/popularProducts');
-        result.value = response.data;
-    } catch(e) {
-        console.log(e);
-    }
-}
-
-onMounted(() => {
-    getRequest();
-})
-
-const modules = ref([Navigation, Pagination, Scrollbar, A11y]);
 </script>
 
 <template>
-    <div class="swiper">
-        <swiper
-            :modules="modules"
-            :slides-per-view="1"
-            navigation
-            :pagination="{ clickable: true }"
-        >
-            <swiper-slide v-for="item in result" :key="item.id">
+    <SwiperCarousel :items-to-show="1">
+        <SwiperSlide v-for="slide in 4" :key="slide">  
+            <div class="swiper">
                 <div class="swiper__block">
                     <NuxtImg  class="swiper__image" src="/img-main-content/main-img.jpg" alt="img" />
                     <div class="swiper__discription">
@@ -42,9 +15,9 @@ const modules = ref([Navigation, Pagination, Scrollbar, A11y]);
                         <button class="swiper__button">View product</button>
                     </div>
                 </div>
-            </swiper-slide>
-        </swiper>
-    </div>
+            </div>
+        </SwiperSlide>
+    </SwiperCarousel>
 </template>
 <style scoped>
 @import './TheSwiperStyles.scss';

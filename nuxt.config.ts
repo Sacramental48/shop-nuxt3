@@ -12,21 +12,12 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    // 'nuxt-lazy-load',
+    'vue3-carousel-nuxt',
     '@nuxt/image',
   ],
-//   lazyLoad: {
-//     // These are the default values
-//     images: true,
-//     videos: true,
-//     audios: true,
-//     iframes: true,
-//     native: false,
-//     directiveOnly: false,
-    
-//     // Default image must be in the public folder
-//     defaultImage: '/default-image.png',
-//   },
+  carousel: {
+    prefix: 'Swiper'
+  },
   image: {
     inject: true,
     quality: 40,
