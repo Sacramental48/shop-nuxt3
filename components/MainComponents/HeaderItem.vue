@@ -1,8 +1,13 @@
 <script setup lang="ts">
-const navbar = ref(['Shop', 'Blog', 'Our Story']);
+const navbar = ref([
+    {name: 'Shop', path: '/shop'},
+    {name: 'Blog', path: '/blog'},
+    {name: 'Our Story', path: '/about'},
+]);
+
 const actionsBar = ref([
     {path: '/svg-header/shopping-icon.svg', alt: 'shopping', routerPath: '/shopping'},
-    {path: '/svg-header/user-icon.svg', alt: 'user', routerPath: '/userlogin'},
+    {path: '/svg-header/user-icon.svg', alt: 'user', routerPath: '/login'},
 ]);
 </script>
 
@@ -12,9 +17,9 @@ const actionsBar = ref([
         <UIBurger />
         <div class="header__right-side">
             <nav class="header__menu">
-                <ul class="header-menu__list" v-for="item in navbar" :key="item">
+                <ul class="header-menu__list" v-for="item in navbar" :key="item.name">
                     <li class="header-menu__item">
-                        <NuxtLink class="header-menu__link" :to="item">{{ item }}</NuxtLink>
+                        <NuxtLink class="header-menu__link" :to="item.path">{{ item.name }}</NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -30,5 +35,5 @@ const actionsBar = ref([
     </header>
 </template>
 <style scoped lang="scss">
-@import './styles/HeaderItemStyles.scss'
+@import './styles/HeaderItemStyles.scss';
 </style>

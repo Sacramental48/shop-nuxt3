@@ -22,5 +22,5 @@
     </div>
 </template>
 <style scoped lang="scss">
-@import '../assets/scss/UserPage/UserLoginStyle.scss';
+@import '~/assets/scss/LoginPage/LoginStyles.scss';
 </style>

@@ -28,9 +28,11 @@
         max-width: 540px;
     }
 
-
     @media (max-width: 546px){
         max-width: 320px;
+    }
+
+    @media (max-width: 380px){
         padding: 0 16px;
     }
     

@@ -1,0 +1,75 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+    max-width: 670px;
+
+}
+.about {
+    text-align: center;
+
+    &__title {
+        font-size: 33px;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 46px;
+    }
+
+    &__content {
+        margin-bottom: 39px;
+        text-align: left;
+    }
+
+}
+.trends {
+
+    &__title {
+        font-size: 26px;
+        margin-bottom: 23px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 48px;
+    }
+
+    &__description {
+        margin-bottom: 16px;
+    }
+
+    &__navigation {
+        margin-bottom: 39px ;
+    }
+
+    &__navigation-list {
+        
+    }
+
+    &__navigation-item {
+        list-style: inside;
+    }
+
+}
+
+.care {
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__image {
+        margin-bottom: 48px;
+    }
+
+    &__description {
+        text-align: left;
+    }
+
+}
+
